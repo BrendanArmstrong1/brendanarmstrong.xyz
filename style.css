@@ -1,0 +1,207 @@
+html{
+    height: 100%
+}
+
+body {
+    background-image: 
+    radial-gradient(rgba(0, 0, 0, 1), rgba(0, 0, 0, 0)), 
+    linear-gradient(to left, rgba(0,0,0,1), rgba(0, 0, 0, 0)),
+    linear-gradient(to right, rgba(0,0,0,1), rgba(0, 0, 0, 0)),
+    url(bubble.jpg);
+    background-attachment: scroll, fixed, fixed, scroll;
+    background-repeat: no-repeat;
+    background-size: 100% 910px, 160px 100%, 160px 100%, 100% 910px;
+    background-position: top, right, left, top;
+}
+
+.arranger {
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+}
+
+footer {
+  flex-shrink: 0;
+  color: white;
+  background: black;
+  text-align: center;
+}
+footer hr {
+  margin-top: 0px;
+}
+footer ul {
+  padding-bottom: 10px;
+  list-style-type: none;
+}
+li {
+  margin: 5px 0;
+}
+footer a {
+  color: lightblue;
+}
+
+main {
+  flex: 1 0 auto;
+  margin-bottom: auto;
+    margin-top: auto;
+    overflow: hidden;
+}
+
+h1{
+  color: fuchsia;
+  font-size: 4em; 
+  -webkit-text-stroke: 1px white;
+  text-align: center;
+}
+/* On smaller screens, where height is less than 450px, change the style of the sidebar (less padding and a smaller font size) */
+
+.skills {
+  background: linear-gradient(to bottom right, rgba(45,0,65,0.6), rgba(67,0,90,0.3));
+  display: flex;
+  flex-direction: column;
+  background-repeat: no-repeat;
+  background-size: cover;
+  padding-bottom: 10%;
+}
+
+.skill-icons {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+
+.skill-desc {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: auto;
+  width: 75%;
+  max-width: 900px;
+}
+.skill-desc h2{
+  color: black;
+  font-size: 2em;
+  margin-bottom: 5px;
+}
+.skill-desc p {
+  line-height: 15px;
+  margin-top: 0px;
+}
+
+
+.heading {
+  width: 100%;
+  flex: 1;
+}
+
+.home_container {
+  display: flex;
+  height: 100%;
+  flex-direction: row;
+  align-items: center;
+  flex-wrap: wrap;
+  height: 900px;
+  gap: 10px;
+}
+.intro_paragraph {
+  flex: 1;
+  justify-content: center;
+}
+.intro_paragraph a{
+  color: fuchsia;
+}
+.intro_paragraph h1{
+  text-align: right;
+  margin-right: 0;
+  margin-left: auto;
+  width: 70%;
+}
+.intro_paragraph p{
+  width: 50%;
+  color: whitesmoke;
+}
+
+
+/* The sidebar menu */
+.sidenav {
+  width: 160px; /* Set the width of the sidebar */
+  position: fixed; /* Fixed Sidebar (stay in place on scroll) */
+  z-index: 1; /* Stay on top */
+  top: 33px; /* Stay at the top */
+  left: 0;
+  overflow-x: hidden; /* Disable horizontal scroll */
+}
+
+/* The navigation menu links */
+.sidenav a {
+  padding: 6px 8px 6px 30px;
+  text-decoration: none;
+  font-size: 25px;
+  color: #818181;
+  display: block;
+}
+
+/* When you mouse over the navigation links, change their color */
+.sidenav a:hover {
+  background-color: #f1f1f1;
+}
+
+/* On screens that are less than 700px wide, make the sidebar into a topbar */
+@media screen and (max-width: 700px) {
+  .sidenav {
+    width: 100%;
+    height: auto;
+    top: 0px;
+    background-color: black;
+    text-align: center;
+  }
+  .sidenav a {
+    display: inline-block;
+    padding-right: 20px;
+    padding-left: 20px;
+    padding-bottom:0px;
+    padding-top:0px;
+  }
+  .home_container {
+    flex-direction: column;
+    align-items: center;
+  }
+  .intro_paragraph p{
+    width: 100%;
+    text-align: left;
+    margin:2px;
+  }
+  .bottom_aligner {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+  }
+  .intro_paragraph h1{
+    width: 100%;
+    margin-top: 350px;
+    margin-bottom: auto;
+    text-align: center;
+  }
+
+  .paragraph {
+    width: 95%;
+  }
+
+  main {
+    margin-left: 0;
+    margin-right: 0;
+  }
+
+  body {
+      background-image: 
+      radial-gradient(rgba(0, 0, 0, 1), rgba(0, 0, 0, 0)), 
+      url(bubble.jpg);
+      background-attachment: scroll;
+      background-repeat: no-repeat;
+      background-size: 100% 910px;
+      background-position: top;
+  }
+}
