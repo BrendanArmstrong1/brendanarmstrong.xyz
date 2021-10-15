@@ -7,7 +7,7 @@ body {
     radial-gradient(rgba(0, 0, 0, 1), rgba(0, 0, 0, 0)), 
     linear-gradient(to left, rgba(0,0,0,1), rgba(0, 0, 0, 0)),
     linear-gradient(to right, rgba(0,0,0,1), rgba(0, 0, 0, 0)),
-    url(bubble.jpg);
+    url(Images/bubble.jpg);
     background-attachment: scroll, fixed, fixed, scroll;
     background-repeat: no-repeat;
     background-size: 100% 910px, 160px 100%, 160px 100%, 100% 910px;
@@ -198,7 +198,7 @@ h1{
   body {
       background-image: 
       radial-gradient(rgba(0, 0, 0, 1), rgba(0, 0, 0, 0)), 
-      url(bubble.jpg);
+      url(Images/bubble.jpg);
       background-attachment: scroll;
       background-repeat: no-repeat;
       background-size: 100% 910px;

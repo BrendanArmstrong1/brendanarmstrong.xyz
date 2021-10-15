@@ -6,7 +6,7 @@ body {
     background-image: 
     linear-gradient(to left, rgba(0,0,0,1), rgba(0, 0, 0, 0.5)),
     linear-gradient(to right, rgba(0,0,0,1), rgba(0, 0, 0, 0.5)),
-    url(bubble-orig.jpg);
+    url(Images/bubble-orig.jpg);
     background-attachment: fixed;
     background-repeat: no-repeat;
     background-size: 160px 100%, 160px 100%, 100% 100%;
