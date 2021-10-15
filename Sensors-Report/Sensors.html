@@ -5,6 +5,9 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <link rel="stylesheet" href="../style2.css" type="text/css" media="screen" title="no title" charset="utf-8">
+    <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+    <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js">
+    </script>
     <title>Projects</title>
 </head>
 
@@ -1239,10 +1242,14 @@
                     electriacal resistance is high, for conductors, it is low. The equation describing the electrical
                     resistance
                     of any
-                    material is shown in eq <a href="#eq:baseRes" data-reference-type="ref"
-                        data-reference="eq:baseRes">[eq:baseRes]</a>.</p>
-                <p><span class="math display">$$\label{eq:baseRes}
-                        R_o = \frac{L}{A}\rho$$</span></p>
+                    material is shown in \eqref{baseRes} eq .</p>
+                <p>
+                    \begin{equation}
+                    R_o = \frac{L}{A}\rho
+                    \label{baseRes}
+                    \tag{1}
+                    \end{equation}
+                </p>
                 <p>The base resistance (<span class="math inline"><em>R</em><sub><em>o</em></sub></span>) of some piece
                     of
                     material is a
@@ -1257,12 +1264,16 @@
                     material analysis is done.</p>
                 <p>The equation that describes the change in electrical resistance with a change in temperature is shown
                     in
-                    eq
-                    <a href="#eq:ThermalRes" data-reference-type="ref"
-                        data-reference="eq:ThermalRes">[eq:ThermalRes]</a>
+                    eq \eqref{ThermalRes}
                 </p>
-                <p><span
-                        class="math display"><em>R</em> = <em>R</em><sub><em>o</em></sub>(1+<em>α</em><em>Δ</em><em>T</em>)</span>
+                <p>$$
+                    \begin{equation}
+                    R = R_o(1 + \alpha\Delta T)
+                    \label{ThermalRes}
+                    \tag{2}
+                    \end{equation}
+                    $$
+
                 </p>
                 <p>This says that the new resistance (<span class="math inline"><em>R</em></span>) is a function of the
                     base
@@ -1271,8 +1282,7 @@
                         class="math inline"><em>Δ</em><em>T</em></span>), and temperature coefficient (<span
                         class="math inline"><em>α</em></span>). In order to get the greatest change in resistance for a
                     small
-                    temperature change, the base resistance from equation <a href="#eq:baseRes"
-                        data-reference-type="ref" data-reference="eq:baseRes">[eq:baseRes]</a> needs to be maximized. In
+                    temperature change, the base resistance from equation \eqref{baseRes} needs to be maximized. In
                     order to do this, the sensor
                     will
                     be
@@ -1283,7 +1293,7 @@
                     area can
                     be minimized.</p>
                 <figure>
-                    <img src="Images/serpantine.PNG" id="fig:serpentine" style="height:2.5in"
+                    <img src="Images/serpantine.PNG" id="fig:serpentine" style="width:500px"
                         alt="Illustration of serpentine thermistor. Image obtained from " />
                     <figcaption aria-hidden="true">Illustration of serpentine thermistor. Image obtained from <span
                             class="citation" data-cites="Sensors2018"></span></figcaption>
@@ -1322,7 +1332,7 @@
                                         class="math inline"><em>Ω</em><em>m</em></span>]</th>
                                 <th style="text-align: center;"><span
                                         class="math inline"><em>R</em><sub><em>o</em></sub></span>
-                                    at 20
+                                    at 20&deg;
                                 </th>
                             </tr>
                         </thead>
@@ -1375,13 +1385,12 @@
                     calculated. To do this, the base values in table <a href="#tab:baseResistTable"
                         data-reference-type="ref" data-reference="tab:baseResistTable">1</a> were used to calculated the
                     change in resistance using
-                    equation <a href="#eq:ThermalRes" data-reference-type="ref"
-                        data-reference="eq:ThermalRes">[eq:ThermalRes]</a> for a
+                    equation \eqref{ThermalRes} for a
                     temperature change of 15. the results are shown in table <a href="#tab:tempcoefficienttable"
                         data-reference-type="ref" data-reference="tab:tempcoefficienttable">2</a>.</p>
                 <div id="tab:tempcoefficienttable">
                     <table>
-                        <caption>Temperature coefficients of chosen metals and the change in resistance over 15.
+                        <caption>Temperature coefficients of chosen metals and the change in resistance over 15&deg;.
                         </caption>
                         <thead>
                             <tr class="header">
@@ -1390,7 +1399,7 @@
                                         class="math inline"><em>α</em></span>)
                                 </th>
                                 <th style="text-align: center;"><span class="math inline"><em>Δ</em><em>R</em></span>
-                                    for 15
+                                    for 15&deg;
                                 </th>
                             </tr>
                         </thead>
@@ -1466,7 +1475,7 @@
                     compared as a group.
                 </p>
                 <figure>
-                    <img src="Images/SMALLRES.png" id="fig:SmallRes" style="height:2.5in"
+                    <img src="Images/SMALLRES.png" id="fig:SmallRes" style="width:500px"
                         alt="Fabricated small sensors attached to the breadboard." />
                     <figcaption aria-hidden="true">Fabricated small sensors attached to the breadboard.</figcaption>
                 </figure>
@@ -1491,7 +1500,7 @@
                     were put
                     there by the lab technicians.</p>
                 <figure>
-                    <img src="Images/LargeRes.jpg" id="fig:LargeRes" style="height:2.5in"
+                    <img src="Images/LargeRes.jpg" id="fig:LargeRes" style="width:500px"
                         alt="Fabricated large sensors attached to the breadboard." />
                     <figcaption aria-hidden="true">Fabricated large sensors attached to the breadboard.</figcaption>
                 </figure>
@@ -1627,7 +1636,7 @@
                     of the
                     thermometer was as close to the sensor being tested as possible.</p>
                 <figure>
-                    <img src="Images/TestingSetup.png" id="fig:Testing Setup" style="height:3in"
+                    <img src="Images/TestingSetup.png" id="fig:Testing Setup" style="width:500px"
                         alt="Testing Environment with annotations of components" />
                     <figcaption aria-hidden="true">Testing Environment with annotations of components</figcaption>
                 </figure>
@@ -1680,7 +1689,7 @@
                     there was plenty of room to increase the signal.
                 </p>
                 <figure>
-                    <img src="Images/initial_circuit.png" id="fig:InitialCuircuit" style="height:2.5in"
+                    <img src="Images/initial_circuit.png" id="fig:InitialCuircuit" style="width:500px"
                         alt="Initial circuit used to read data from the sensor." />
                     <figcaption aria-hidden="true">Initial circuit used to read data from the sensor.</figcaption>
                 </figure>
@@ -1734,9 +1743,14 @@
                     non
                     inverting
                     amplifier the equation below was used:</p>
-                <p><span class="math display">$$\label{eq:GainS}
+                <p><span class="math display">$$
+                        \begin{equation}
                         A = \frac{V_{o_{max}}-V_{o_{min}}}{V_{i_{max}}-V_{i_{min}}} = \frac{3.25V}{0.02V} = 162.5
-                        V/V$$</span>
+                        V/V
+                        \label{eq:GainS}
+                        \tag{3}
+                        \end{equation}
+                        $$</span>
                 </p>
                 <p>A gain factor of 162.5 would have been ideal. But the resistors that were available in the home lab
                     were
@@ -1749,8 +1763,8 @@
                     ice tray
                     to the left of the power supply. It would suffice to say that the required resistors were not easily
                     available, so
-                    values were selected to give a gain as close as possible to the value calculated in equation <a
-                        href="#eq:GainS" data-reference-type="ref" data-reference="eq:GainS">[eq:GainS]</a>. This ended
+                    values were selected to give a gain as close as possible to the value calculated in equation
+                    \eqref{eq:GainS}. This ended
                     up
                     being
                     a non inverting
@@ -1765,7 +1779,7 @@
                     hairdryer was blowing on the circuit, as seen in figure <a href="#fig:UnfilteredFLORA"
                         data-reference-type="ref" data-reference="fig:UnfilteredFLORA">6</a>.</p>
                 <figure>
-                    <img src="Images/UnfilteredOutput.png" id="fig:UnfilteredFLORA" style="height:2.5in"
+                    <img src="Images/UnfilteredOutput.png" id="fig:UnfilteredFLORA" style="width:500px"
                         alt="Unfiltered data captured when a hairdryer is blowing on it." />
                     <figcaption aria-hidden="true">Unfiltered data captured when a hairdryer is blowing on it.
                     </figcaption>
@@ -1780,7 +1794,7 @@
                     output of the oscilloscope
                 </p>
                 <figure>
-                    <img src="Images/TempSensOutUnfiltered.jpg" id="fig:UnfilteredOutput" style="height:2.5in"
+                    <img src="Images/TempSensOutUnfiltered.jpg" id="fig:UnfilteredOutput" style="width:500px"
                         alt="Unfiltered output of the sensor, including high frequency components." />
                     <figcaption aria-hidden="true">Unfiltered output of the sensor, including high frequency components.
                     </figcaption>
@@ -1803,7 +1817,7 @@
                     DC
                     signal.</p>
                 <figure>
-                    <img src="Images/ThermistorFilter.png" id="fig:ConditioningCircuit" style="height:2.5in"
+                    <img src="Images/ThermistorFilter.png" id="fig:ConditioningCircuit" style="width:500px"
                         alt="Conditioned circuit used to filter out the high frequency noise." />
                     <figcaption aria-hidden="true">Conditioned circuit used to filter out the high frequency noise.
                     </figcaption>
@@ -1815,7 +1829,7 @@
                         data-reference="fig:FilteredOutput">9</a>.
                 </p>
                 <figure>
-                    <img src="Images/TempSensOutFiltered.jpg" id="fig:FilteredOutput" style="height:2.5in"
+                    <img src="Images/TempSensOutFiltered.jpg" id="fig:FilteredOutput" style="width:500px"
                         alt="Filtered output of the sensor. With frequency noise filtered out." />
                     <figcaption aria-hidden="true">Filtered output of the sensor. With frequency noise filtered out.
                     </figcaption>
@@ -2122,7 +2136,7 @@
                     sensors.
                 </p>
                 <figure>
-                    <img src="Images/Calibration Curve.png" id="fig:CalibrationPlot" style="height:3in"
+                    <img src="Images/Calibration Curve.png" id="fig:CalibrationPlot" style="width:500px"
                         alt="Calibration Values displayed on a graph. There are trend lines that show the line of best for for large and small sensors as a group." />
                     <figcaption aria-hidden="true">Calibration Values displayed on a graph. There are trend lines that
                         show
@@ -2289,7 +2303,7 @@
                     their
                     positions graphically relative to each other.</p>
                 <figure>
-                    <img src="Images/Results.png" id="fig:ResultsPlot" style="height:3in"
+                    <img src="Images/Results.png" id="fig:ResultsPlot" style="width:500px"
                         alt="Results of table 6 displayed on a graph with reference lines for body actual body temperature and body temperature measured from calibration thermometer" />
                     <figcaption aria-hidden="true">Results of table <a href="#tab:MeasuredResults"
                             data-reference-type="ref" data-reference="tab:MeasuredResults">6</a> displayed on a graph

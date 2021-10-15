@@ -57,6 +57,21 @@ h1{
   color: black;
   -webkit-text-stroke: 0px #000000;
 }
+figure {
+  margin: auto;
+}
+
+table {
+  min-width: 60%;
+  border-collapse: collapse;
+  margin-right: auto;
+  margin-left: auto;
+  margin-bottom: 20px;
+  margin-top: 20px;
+}
+table, th, td{
+  border: 1px solid black;
+}
 
 .container {
   display: flex;
