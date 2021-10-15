@@ -12,5 +12,4 @@ matter.
 So far I have a style that I like. Perhaps the color scheme could be improved to affect the viewers subconscious perception of
 me? I will leave that for future development. At the moment, what I need to finish to make this publishable are:
 
-- Correct html version of final year report to accurately portray content.
 - Add apparopriate messaging in subsections that are empty.
