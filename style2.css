@@ -59,7 +59,11 @@ h1{
 }
 figure {
   margin: auto;
+  margin-bottom: 20px;
+  margin-top: 20px;
+  text-align: center;
 }
+
 
 table {
   min-width: 60%;
@@ -71,6 +75,11 @@ table {
 }
 table, th, td{
   border: 1px solid black;
+}
+
+.menu-table, .menu-table th, .menu-table td {
+  width: 80%;
+  border: none;
 }
 
 .container {
