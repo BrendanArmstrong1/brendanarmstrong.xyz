@@ -10,6 +10,6 @@ matter.
 ## Progress
 
 So far I have a style that I like. Perhaps the color scheme could be improved to affect the viewers subconscious perception of
-me? I will leave that for future development. At the moment, what I need to finish to make this publishable are:
+me? I will leave that for future development. So far I feel that the website is ready to present. I will find a reliable process
+for entering content, and documenting it.
 
-- Add apparopriate messaging in subsections that are empty.
