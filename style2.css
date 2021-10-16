@@ -82,6 +82,11 @@ table, th, td{
   border: none;
 }
 
+.separator {
+  flex-shrink: 0;
+  height: 122px;
+}
+
 .container {
   display: flex;
   flex-direction: column;
