@@ -5,6 +5,7 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <link rel="stylesheet" href="style.css" type="text/css" media="screen" title="no title" charset="utf-8">
+    <script type="text/javascript" src="fingerpaint.js"></script>
     <title>Brendan's Website</title>
 </head>
 
@@ -130,6 +131,42 @@
                         Learn more about it in my Projects section.
                     </p>
 
+                    <div style="display: flex; justify-content: center;">
+                        <div
+                            style="order: 1; flex-shrink: 5; text-align: right; margin-left: auto; padding-right: 20px;">
+                            <h3 style="margin-top: 0; text-align: right; font-size: 1.6em; margin-bottom: 0;">Try it
+                                out
+                            </h3>
+                            <p style="margin: 0; margin-bottom: 5px;">
+                                Draw a picture of a peice of an article clothing and my AI will guess what you drew!
+                                the available options are listed below.
+                            </p>
+                            <ol class="AI" title="Options">
+                                <li>this</li>
+                                <li>taht</li>
+                                <li>something</li>
+                                <li>other</li>
+                                <li>blah</li>
+                                <li>this</li>
+                                <li>this</li>
+                                <li>this</li>
+                                <li>this</li>
+                            </ol>
+                        </div>
+                        <canvas style="order: 2; flex-shrink: 0; margin-top: auto; margin-bottom: auto;"
+                            id="myCanvas">No canvas available</canvas>
+                        <div style="order: 3; padding-left: 20px;" id="tools">
+                            <table>
+                                <tr>
+                                    <td><label for="colorChange">Color: </label><input type="color" id="colorChange" />
+                                    </td>
+                                    <td><label for="lineWidth">Width: </label><input type="range" id="lineWidth" min="1"
+                                            max="10" step="1" /></td>
+                                    <td><button id="btnClear">Clear</button></td>
+                                </tr>
+                            </table>
+                        </div>
+                    </div>
 
                     <h2> Linux</h2>
 
