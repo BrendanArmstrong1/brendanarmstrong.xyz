@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="stylesheet" href="{{ url_for('static', filename='styles/style2.css') }}" type="text/css" media="screen"
+        title="no title" charset="utf-8">
+    <title>Projects</title>
+</head>
+
+<body>
+
+    <div class="sidenav">
+        <a href="/">Home</a>
+        <a href="/Projects">Projects</a>
+    </div>
+    <div class="arranger">
+        <main>
+            <h1>Projects</h1>
+
+            <div class="container">
+                <h2>Project Entries</h2>
+                <p>
+                    This is a list of projects that I have completed or are currently in progress. In progress projects
+                    can be kept track of on my <a href="https://github.com/BrendanArmstrong1">Github</a>.
+                </p>
+                <div class="table-of-elements">
+                    <table class="menu-table">
+                        <th>Project name</th>
+                        <th>Date completed</th>
+                        <tr>
+                            <td>Activity Log &amp; Automatic Processing</td>
+                            <td>In Progress</td>
+                        </tr>
+                        <tr>
+                            <td>AI Learns to Play Snake</td>
+                            <td>In Progress</td>
+                        </tr>
+                        <tr>
+                            <td><a href="{{ url_for('static', filename='Sensors-Report/Sensors_Final_Report.pdf') }}"
+                                    target="_blank">Sensor Morphology
+                                    (Final Year
+                                    Project)</a>&nbsp;
+                            <td>May 15 2021</td>
+                        </tr>
+                    </table>
+                </div>
+            </div>
+
+        </main>
+        <footer>
+            <hr>
+            <ul>
+                <li>background image: <a
+                        href="http://www.animalhi.com/Dragons/Bubble/bubbles1alt_bubble_chamber_art_2200x2800_wallpaper_10620"
+                        target="_blank">bubble chamber art</a></li>
+                <li>My email is on my <a href="{{ url_for('static', filename='Brendan_resume.pdf') }}"
+                        target="_blank">Resume</a></li>
+            </ul>
+        </footer>
+
+    </div>
+
+
+
+</body>
+
+</html>

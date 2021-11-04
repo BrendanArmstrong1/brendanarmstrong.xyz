@@ -1,0 +1,165 @@
+html{
+    height: 100%
+}
+
+body {
+    background-image: 
+    linear-gradient(to left, rgba(0,0,0,1), rgba(0, 0, 0, 0.5)),
+    linear-gradient(to right, rgba(0,0,0,1), rgba(0, 0, 0, 0.5)),
+    url(../Images/bubble.jpg);
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-size: 160px 100%, 160px 100%, 100% 100%;
+    background-position: right, left, top;
+}
+
+.arranger {
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+}
+
+footer {
+  flex-shrink: 0;
+  color: white;
+  background: black;
+  text-align: center;
+}
+footer ul {
+  margin: 10px;
+  padding-bottom: 10px;
+  list-style-type: none;
+}
+footer hr {
+  margin-top: 0px;
+}
+li {
+  margin: 5px 0;
+}
+footer a {
+  color: lightblue;
+}
+
+main {
+  flex: 1 0 auto;
+  margin-bottom: auto;
+  margin-top: auto;
+  overflow: hidden;
+}
+
+h1{
+  color: fuchsia;
+  font-size: 4em; 
+  -webkit-text-stroke: 1px white;
+  text-align: center;
+}
+.container h1 {
+  color: black;
+  -webkit-text-stroke: 0px #000000;
+}
+figure {
+  margin: auto;
+  margin-bottom: 20px;
+  margin-top: 20px;
+  text-align: center;
+}
+
+
+table {
+  min-width: 60%;
+  border-collapse: collapse;
+  margin-right: auto;
+  margin-left: auto;
+  margin-bottom: 20px;
+  margin-top: 20px;
+}
+table, th, td{
+  border: 1px solid black;
+}
+
+.menu-table, .menu-table th, .menu-table td {
+  width: 80%;
+  border: none;
+}
+
+.separator {
+  flex-shrink: 0;
+  height: 122px;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  max-width: 900px;
+  margin-right: auto;
+  margin-left: auto;
+  width: 75%;
+  border: solid white;
+  border-width: 2px;
+  min-height: 200px;
+  overflow: hidden;
+  background: rgba(200, 200, 200, 0.85);
+  padding-bottom: 20px;
+  padding-right: 10px;
+  padding-left: 10px;
+}
+
+.container h2 {
+  margin-bottom: 3px;
+}
+.container p {
+  margin-top: 3px;
+}
+
+.table-of-elements {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin-top: 20px;
+  margin-bottom: auto; 
+  margin-left: 15%;
+  margin-right: 15%;
+  text-align: left;
+}
+
+/* The sidebar menu */
+.sidenav {
+  width: 160px; /* Set the width of the sidebar */
+  position: fixed; /* Fixed Sidebar (stay in place on scroll) */
+  z-index: 1; /* Stay on top */
+  top: 33px; /* Stay at the top */
+  left: 0;
+  overflow-x: hidden; /* Disable horizontal scroll */
+}
+
+/* The navigation menu links */
+.sidenav a {
+  padding: 6px 8px 6px 30px;
+  text-decoration: none;
+  font-size: 25px;
+  color: #818181;
+  display: block;
+}
+
+/* When you mouse over the navigation links, change their color */
+.sidenav a:hover {
+  background-color: #f1f1f1;
+}
+
+/* On screens that are less than 700px wide, make the sidebar into a topbar */
+@media screen and (max-width: 700px) {
+  .sidenav {
+    width: 100%;
+    height: auto;
+    top: 0px;
+    background-color: black;
+    text-align: center;
+  }
+  .sidenav a {
+    display: inline-block;
+    padding-right: 20px;
+    padding-left: 20px;
+    padding-bottom:0px;
+    padding-top:0px;
+  }
+}
