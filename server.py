@@ -5,6 +5,7 @@ import numpy as np
 import base64
 from io import BytesIO
 import json
+import os
 
 model = Model.load('models/PositiveDense.model')
 app = Flask(__name__)
@@ -40,9 +41,18 @@ def process_image():
     b64 = request.form['image'].split(",")[1]
     d64 = base64.b64decode(b64)
     img = Image.open(BytesIO(d64))
-    img = img.resize((28, 28))
+    img = img.resize((28, 28), Image.ADAPTIVE)
     pxl = np.asarray(img)[:, :, 3]/255
     pxl = pxl.reshape(1, 1, 28, 28)
+    contents = ''
+    if os.path.isfile('AI-users.txt'):
+        with open('AI-users.txt', 'r') as f:
+            contents = f.read()
+            contents = str(int(contents)+1)
+    else:
+        contents = str(0)
+    with open('AI-users.txt', 'w') as f:
+        f.write(contents)
     prediction = np.around(model.predict(pxl)*100, decimals=3)
     item = fashion_mnist_labels[np.argmax(prediction[0])]
     acc = prediction[0][np.argmax(prediction[0])]

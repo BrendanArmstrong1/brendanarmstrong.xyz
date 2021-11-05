@@ -1,5 +1,6 @@
 var drawing = false;
 var context;
+var canvas;
 const mouse = {
     x: 0, y: 0,                        // coordinates
     lastX: 0, lastY: 0,                // last frames mouse position 
@@ -27,7 +28,6 @@ window.onload = function () {
     //Save
     document.getElementById('btnSave').addEventListener('click', function () {
         var dataURL = document.getElementById('myCanvas').toDataURL();
-        //console.log(dataURL)
         let xhr = new XMLHttpRequest();
         const formData = new FormData();
         formData.append("image", dataURL);
@@ -39,12 +39,23 @@ window.onload = function () {
                 console.log("Status: " + xhr.status);
             } else {
                 parsed = JSON.parse(xhr.response);
+                console.log("T-Shirt/Top " + parsed['T-Shirt/Top'])
+                console.log("Trouser " + parsed['Trouser'])
+                console.log("Pullover " + parsed['Pullover'])
+                console.log("Dress " + parsed['Dress'])
+                console.log("Coat " + parsed['Coat'])
+                console.log("Sandal " + parsed['Sandal'])
+                console.log("Shirt " + parsed['Shirt'])
+                console.log("Sneaker " + parsed['Sneaker'])
+                console.log("Bag " + parsed['Bag'])
+                console.log("Ankle Boot " + parsed['Ankle Boot'])
                 document.getElementById('Pred').innerHTML = parsed['item'] + ' [' + parsed['acc'] + "% Confidence]";
             }
         };
     }, false);
 
     //Size Canvas
+    canvas = document.getElementById('myCanvas');
     context = document.getElementById('myCanvas').getContext("2d");
     context.canvas.width = 224;
     context.canvas.height = 224;
