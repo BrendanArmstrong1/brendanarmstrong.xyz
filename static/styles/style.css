@@ -3,15 +3,14 @@ html{
 }
 
 body {
-    background-image: 
-    radial-gradient(rgba(0, 0, 0, 1), rgba(0, 0, 0, 0)), 
-    linear-gradient(to left, rgba(0,0,0,1), rgba(0, 0, 0, 0)),
-    linear-gradient(to right, rgba(0,0,0,1), rgba(0, 0, 0, 0)),
-    url(../Images/bubble.jpg);
-    background-attachment: scroll, fixed, fixed, scroll;
+    background-image:
+    radial-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0)),
+    url(../Images/bubble.jpg),
+    linear-gradient(to bottom right, rgba(20,0,30,0.6), rgba(67,0,90,0.3));
+    background-attachment: scroll, scroll, fixed;
     background-repeat: no-repeat;
-    background-size: 100% 910px, 160px 100%, 160px 100%, 100% 910px;
-    background-position: top, right, left, top;
+    background-size: 100% 910px,100% 910px,100%;
+    background-position: top,top top;
 }
 
 .arranger {
@@ -53,7 +52,7 @@ main {
   margin-left: auto;
   margin-right: 0;
   margin-top: 0;
-  white-space: nowrap;  
+  white-space: nowrap;
 }
 
 .AI li {
@@ -74,15 +73,14 @@ main {
 
 
 h1{
-  color: fuchsia;
-  font-size: 4em; 
-  -webkit-text-stroke: 1px white;
+  color: ivory;
+  font-size: 4em;
+  -webkit-text-stroke: 1px black;
   text-align: center;
 }
 /* On smaller screens, where height is less than 450px, change the style of the sidebar (less padding and a smaller font size) */
 
 .skills {
-  background: linear-gradient(to bottom right, rgba(45,0,65,0.6), rgba(67,0,90,0.3));
   display: flex;
   flex-direction: column;
   background-repeat: no-repeat;
@@ -136,8 +134,14 @@ h1{
   flex: 1;
   justify-content: center;
 }
-.intro_paragraph a{
+.intro_paragraph a:link{
+  color: deepskyblue;
+}
+.intro_paragraph a:visited{
   color: fuchsia;
+}
+.intro_paragraph a:hover{
+  color: darkturquoise;
 }
 .intro_paragraph h1{
   text-align: right;
@@ -222,8 +226,8 @@ h1{
   }
 
   body {
-      background-image: 
-      radial-gradient(rgba(0, 0, 0, 1), rgba(0, 0, 0, 0)), 
+      background-image:
+      radial-gradient(rgba(0, 0, 0, 1), rgba(0, 0, 0, 0)),
       url(Images/bubble.jpg);
       background-attachment: scroll;
       background-repeat: no-repeat;

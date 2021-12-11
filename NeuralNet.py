@@ -37,7 +37,7 @@ class Layer_Dense:
 
         if self.bias_regularizer_l2 > 0:
             self.dbiases += 2 * self.bias_regularizer_l2 * self.biases
-            
+
         self.dinputs = self.dot_forward(dvalues, self.weights.T, 0)
 
     def get_parameters(self):
